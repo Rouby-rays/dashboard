@@ -6,7 +6,7 @@ body {
 
 body {
   background-color: #f4f4f4;
-  font-family: 'Nunito'sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 h1,
@@ -169,8 +169,24 @@ h3 {
 }
 
 .panel--middle {
+  padding-top: 20px;
   grid-column: 2 / -1;
   background-color: #ffffff;
+}
+
+.panel-title {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #434343;
+}
+
+.panel-table {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .panel--bottom {
