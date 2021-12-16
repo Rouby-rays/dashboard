@@ -2,7 +2,7 @@
 const tabItems = Array.from(document.querySelectorAll('.sidebar-list__item'))
 
 /*Selection items*/
-const contentItems = Array.from(document.querySelectorAll('.content-item'))
+const contentItems = Array.from(document.querySelectorAll('.dashboard-item'))
 
 const clearActiveClass = (element, className = 'is-active') => {
   element.find(item => item.classList.remove(`${ className }`))

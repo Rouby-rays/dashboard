@@ -34,13 +34,13 @@
      <section class="sidebar__menu">
        <h3 class="sidebar-title">Меню</h3>
        <ul class="sidebar-list">
-         <li class="sidebar-list__item is-active">
+         <li class="sidebar-list__item ">
            <a href="#">Профиль</a>
          </li>
          <li class="sidebar-list__item">
            <a href="#">Инструменты</a>
          </li>
-         <li class="sidebar-list__item">
+         <li class="sidebar-list__item is-active">
            <a href="#">Статистика</a>
          </li>
          <li class="sidebar-list__item">
@@ -68,67 +68,103 @@
       </ul>
     </section>
    </aside>
-   <section class="panel panel--middle is-active">
-     <h2 class="panel-title">Статистика аккаунта</h2>
-     <table class="panel-table">
-       <tr>
-         <td class="row-name">
-           Имя аккаунта
-         </td>
-         <td class="row-value">
-           myName
-         </td>
-       </tr>
-       <tr>
-         <td class="row-name">
-           Количество подписок
-         </td>
-         <td class="row-value">
-           124
-         </td>
-       </tr>
-       <tr>
-         <td class="row-name">
-           Количество подписчиков
-         </td>
-         <td class="row-value">
-           198
-         </td>
-       </tr>
-       <tr>
-         <td class="row-name">
-           Количество взаимных подписок
-         </td>
-         <td class="row-value">
-           124
-         </td>
-       </tr>
-       <tr>
-         <td class="row-name">
-           Количество не взаимных подписок
-         </td>
-         <td class="row-value">
-           24
-         </td>
-       </tr>
-       <tr>
-         <td class="row-name">
-           Количество новых подписчиков
-         </td>
-         <td class="row-value">
-           24
-         </td>
-       </tr>
-       <tr>
-         <td class="row-name">
-           Количество отписавшихся
-         </td>
-         <td class="row-value">
-           24
-         </td>
-       </tr>
-     </table>
-     <span class="panel-middle-select">Отчёт за период:</span>
+   <section class="dashboard-wrapper">
+   <ul class="dashboard-list">
+     <li class="dashboard-item">
+       <div class="panel panel--middle">
+          <h2 class="panel-title">Профиль</h2>
+       </div>
+     </li>
+
+     <li class="dashboard-item">
+       <div class="panel panel--middle">
+          <h2 class="panel-title">Инструменты</h2>
+       </div>
+     </li>
+
+     <li class="dashboard-item is-active">
+       <div class="panel panel--middle">
+       <h2 class="panel-title">Статистика аккаунта</h2>
+       <table class="panel-table">
+         <tr>
+           <td class="row-name">
+             Имя аккаунта
+           </td>
+           <td class="row-value">
+             myName
+           </td>
+         </tr>
+         <tr>
+           <td class="row-name">
+             Количество подписок
+           </td>
+           <td class="row-value">
+             124
+           </td>
+         </tr>
+         <tr>
+           <td class="row-name">
+             Количество подписчиков
+           </td>
+           <td class="row-value">
+             198
+           </td>
+         </tr>
+         <tr>
+           <td class="row-name">
+             Количество взаимных подписок
+           </td>
+           <td class="row-value">
+             124
+           </td>
+         </tr>
+         <tr>
+           <td class="row-name">
+             Количество не взаимных подписок
+           </td>
+           <td class="row-value">
+             24
+           </td>
+         </tr>
+         <tr>
+           <td class="row-name">
+             Количество новых подписчиков
+           </td>
+           <td class="row-value">
+             24
+           </td>
+         </tr>
+         <tr>
+           <td class="row-name">
+             Количество отписавшихся
+           </td>
+           <td class="row-value">
+             24
+           </td>
+         </tr>
+       </table>
+       <span class="panel-middle-select">Отчёт за период:</span>
+     </div>
+     </li>
+
+     <li class="dashboard-item">
+       <div class="panel panel--middle">
+          <h2 class="panel-title">Настройки</h2>
+       </div>
+     </li>
+
+     <li class="dashboard-item">
+       <div class="panel panel--middle">
+          <h2 class="panel-title">Уведомления</h2>
+       </div>
+     </li>
+
+     <li class="dashboard-item">
+       <div class="panel panel--middle">
+          <h2 class="panel-title">Безопасность</h2>
+       </div>
+     </li>
+   </ul>
    </section>
   </main>
    </div>
@@ -189,6 +225,6 @@
      </div>
     </div>
   </footer>
-  <script src="js/jquery3.6.0.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
