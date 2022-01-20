@@ -1,7 +1,7 @@
-/*Seletion buttons*/
+/*Выбор всех переключателей меню*/
 const tabItems = Array.from(document.querySelectorAll('.sidebar-list__item'))
 
-/*Selection items*/
+/*Выбор всех панелей меню*/
 const contentItems = Array.from(document.querySelectorAll('.dashboard-item'))
 
 const clearActiveClass = (element, className = 'is-active') => {
@@ -16,7 +16,6 @@ const checkoutTabs = (item, index) => {
   item.addEventListener('click', () => {
 
     if (item.classList.contains('is-active')) return
-    console.log(item)
 
     clearActiveClass(tabItems)
     clearActiveClass(contentItems)

@@ -1,6 +1,5 @@
 
-console.log('Подписчиков ' + followers.length);
-console.log('Подписок: ' + follows.length);
+
 let searchFoll = '';
 
 // Поиск взаимных подписок путём перебора двух массивов
@@ -14,6 +13,22 @@ for(let i = 0; i <= follows.length; i++) {
  }
 };
 
+// Поиск аккаунтов без взаимной подписки
+let notMutFollows = [];
+follows.forEach( function (element) {
+    if ( !~followers.indexOf(element) ) notMutFollows.push(element)
+});
+
+console.log('Без взаимной подписки: ' + notMutFollows.length + ' аккаунты: ' + notMutFollows);
+
+/*
+const resultList = document.querySelector('#result-list')
+
+for(let i = 0; i < result.length; i++) {
+const newElem = document.createElement('li');
+newElem.textContent = result[i]
+resultList.append(newElem);
+} */
 
 // Поиск аккаунтов без взаимной подписки
 /*
